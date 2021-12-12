@@ -1,0 +1,39 @@
+html{
+	box-sizing: border-box; 
+}
+*,
+*::before,
+*::after{
+   box-sizing: inherit;
+}
+body{
+   font-size: 14px;
+   font-family: "Jost", sans-serif;
+}
+img{
+   display: block;
+}
+ul,
+li{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+p{
+   margin: 0;
+}
+a{
+   text-decoration: none;
+   color: #ffff;
+   &:hover{
+      color: #713eff;
+      transition: 0.7s;
+      cursor: pointer;
+   }
+}
+.container{
+   margin: 0 auto;
+   max-width: 1280px;
+   padding: 0 15px;
+}
+
