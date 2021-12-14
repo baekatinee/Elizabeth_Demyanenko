@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 1080vh;
     overflow: hidden;
-    background: url(../img/mistake.jpg);
+    background: url(../img/mistake.jpg) center;
     background-attachment: fixed;
     .not-found-title,
     .title {
@@ -35,9 +35,12 @@ body {
     }
     .title {
         top: 450px;
-        font-size: 48px;
+        font-size: 50px;
         line-height: 49px;
+        font-family: "Jost", sans-serif;
         padding-top: 10px;
+        width: 1204px;
+        font-weight: 500;
     }
     .box {
         position: absolute;
@@ -45,59 +48,6 @@ body {
         background-attachment: fixed;
     }
 }
-
-.mistake {
-    background: unset;
-    .mistake-inner {
-        .btn {
-            margin: 60px auto;
-            justify-content: center;
-            .btn-inner {
-                font-size: 30px;
-            }
-        }
-        .img-mistake {
-            position: absolute;
-            width: 100%;
-            height: 1080vh;
-            overflow: hidden;
-            // background: url(../img/mistake.jpg) center;
-            // background-size: cover;
-            .box {
-                position: absolute;
-                background: #000;
-            }
-        }
-
-        .not-found-title,
-        .title {
-            opacity: 1;
-            font-family: "BigillaBold", sans-serif;
-            font-size: 288px;
-            line-height: 101.7%;
-            text-transform: uppercase;
-            color: #ffffff;
-            text-align: center;
-            padding-top: 160px;
-        }
-        .title {
-            font-size: 48px;
-            line-height: 49px;
-            padding-top: 10px;
-        }
-        video {
-            top: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-            opacity: 0.7;
-            left: 50%;
-            z-index: -10;
-            position: absolute;
-            height: auto;
-        }
-    }
-}
-
 .btn {
     display: flex;
     width: 100%;
