@@ -4,9 +4,51 @@ body {
     background: url(../img/bg.svg);
     background-size: cover;
 }
-.mistake{
+#cont {
+    position: absolute;
+    width: 100%;
+    height: 1080vh;
+    overflow: hidden;
+    background: url(../img/mistake.jpg);
+    background-attachment: fixed;
+    .not-found-title,
+    .title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+        opacity: 1;
+        font-family: "BigillaBold", sans-serif;
+        font-size: 288px;
+        line-height: 101.7%;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 160px;
+    }
+    .btn {
+        margin: 560px auto;
+        justify-content: center;
+        .btn-inner {
+            font-size: 30px;
+        }
+    }
+    .title {
+        top: 450px;
+        font-size: 48px;
+        line-height: 49px;
+        padding-top: 10px;
+    }
+    .box {
+        position: absolute;
+        background: url(../img/mistake.jpg);
+        background-attachment: fixed;
+    }
+}
+
+.mistake {
+    background: unset;
     .mistake-inner {
-        position: relative;
         .btn {
             margin: 60px auto;
             justify-content: center;
@@ -14,12 +56,19 @@ body {
                 font-size: 30px;
             }
         }
-        img {
+        .img-mistake {
             position: absolute;
-            z-index: 1;
             width: 100%;
-            height: 1163px;
+            height: 1080vh;
+            overflow: hidden;
+            // background: url(../img/mistake.jpg) center;
+            // background-size: cover;
+            .box {
+                position: absolute;
+                background: #000;
+            }
         }
+
         .not-found-title,
         .title {
             opacity: 1;
@@ -48,7 +97,6 @@ body {
         }
     }
 }
-
 
 .btn {
     display: flex;
