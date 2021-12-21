@@ -4,20 +4,18 @@ body {
     background: url(../img/bg.svg);
     background-size: cover;
 }
-#cont {
-    position: absolute;
-    width: 100%;
-    height: 1080vh;
-    overflow: hidden;
-    background: url(../img/mistake.jpg) center;
-    background-attachment: fixed;
+.mistake {
+    position: relative;
+    .video {
+        z-index: -10;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
     .not-found-title,
     .title {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 100;
-        opacity: 1;
         font-family: "BigillaBold", sans-serif;
         font-size: 288px;
         line-height: 101.7%;
@@ -27,25 +25,21 @@ body {
         padding-top: 160px;
     }
     .btn {
-        margin: 560px auto;
+        margin: 40px auto;
         justify-content: center;
         .btn-inner {
             font-size: 30px;
         }
     }
     .title {
+        margin: 0 auto;
         top: 450px;
         font-size: 50px;
         line-height: 49px;
         font-family: "Jost", sans-serif;
         padding-top: 10px;
         width: 1204px;
-        font-weight: 500;
-    }
-    .box {
-        position: absolute;
-        background: url(../img/mistake.jpg);
-        background-attachment: fixed;
+        font-weight: 400;
     }
 }
 .btn {
@@ -243,7 +237,7 @@ header {
             position: absolute;
             z-index: -1;
             top: -40px;
-            left: 272px;
+            left: 300px;
         }
         .info-inner.two {
             margin-top: 180px;
@@ -267,8 +261,9 @@ header {
                     margin-top: 0px;
                     font-family: "Jost", sans-serif;
                     color: #ffff;
-                    font-weight: 200;
+                    font-weight: 300;
                     font-size: 36px;
+                    text-shadow: 3px 19px 26px rgba(0, 0, 0, 0.93);
                 }
             }
         }
@@ -1024,16 +1019,16 @@ footer {
             position: relative;
             .img-about-item.one {
                 position: absolute;
-                left: 300px;
+                left: 200px;
             }
             .img-about-item.two {
                 position: absolute;
-                left: 800px;
+                left: 700px;
                 top: 323px;
             }
             .img-about-item.three {
                 position: absolute;
-                left: 900px;
+                left: 800px;
                 top: 366px;
             }
         }

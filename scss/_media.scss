@@ -1,23 +1,27 @@
 @media (max-width: 320px) {
-    #cont{
-        .not-found-title,
-        .title {
+    .mistake{
+        .video {
+          
+     
       
-        padding-top: 200px;
-        font-size: 100px;
         }
-        .title{
-            font-size: 30px;
-            top: 100px;
-            width: 280px;
+        .mistake-inner{
+            .not-found-title,
+            .title {
+          
+            padding-top: 150px;
+            font-size: 100px;
+            }
+            .title{
+                font-size: 30px;
+                top: 100px;
+                width: 280px;
+                padding-top: 50px;
+            }
         }
-        .btn{
-            position: absolute;
-            top: -120px;
-            z-index: 101;
-        }
+    
     }
-
+    
     header {
         .menu-box {
             .logo-inner {
