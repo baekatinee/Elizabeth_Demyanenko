@@ -12,45 +12,32 @@
 </head>
 
 <body>
-    <div id="cont">
-        <div class="not-found-title">
-            404
-        </div>
-        <div class="title">
-            OOps, page not found
-        </div>
-        <div class="btn">
-            <a href="blog.html">
-                <div class="btn-inner">
-                    Go back
+    <section class="mistake">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="img/mistake.mp4" type="video/mp4" />
+        </video>
+        <div class="container">
+            <div class="mistake-inner">
+                <div class="not-found-title">
+                    404
                 </div>
-            </a>
-        </div> 
-    </div>
-    <script type="text/javascript">
-        let bg = document.getElementById('cont');
-        let count = 20;
-        for (let i = 0; i < count; i++) {
-            let glitchBox = document.createElement('div');
-            glitchBox.className = 'box';
-            bg.appendChild(glitchBox);
-        }
-        setInterval(function () {
-            let glitch = document.getElementsByClassName('box');
-            for (let i = 0; i < glitch.length; i++) {
-                glitch[i].style.left = Math.floor(Math.random() * 100) + 'vw';
-                glitch[i].style.top = Math.floor(Math.random() * 100) + 'vh';
-                glitch[i].style.width = Math.floor(Math.random() * 400) + 'px';
-                glitch[i].style.height = Math.floor(Math.random() * 100) + 'px';
-                glitch[i].style.backgroundPosition = Math.floor(Math.random() * 50) + 'px';
-            }
-        }, 200)
-
-    </script>
+                <div class="title">
+                    OOps, page not found
+                </div>
+                <div class="btn">
+                    <a href="blog.html">
+                        <div class="btn-inner">
+                            Go back
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-    
+
 </body>
 
 </html>
